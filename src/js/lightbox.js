@@ -18,11 +18,6 @@ function onLightboxClick(e) {
     lightbox.classList.add('is-open');
     
     window.addEventListener('keydown', onEscapeKeyPress);
-    // window.addEventListener('keydown', onArrowLeft);
-    // window.addEventListener('keydown', onArrowRight);
-
-
-    console.log(galleryImage)
 
 }
 
@@ -30,9 +25,7 @@ function onCloseLightbox() {
     lightbox.classList.remove('is-open');
 
     window.removeEventListener('keydown', onEscapeKeyPress);
-    // window.removeEventListener('keydown', onArrowLeft);
-    // window.removeEventListener('keydown', onArrowRight);
-
+   
     lightboxImage.src = '';
     lightboxImage.alt = '';
 };
