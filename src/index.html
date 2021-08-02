@@ -5,13 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 13</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <!-- форма поиска -->
     <form class="search-form" id="search-form">
-        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-        <button type="submit">Search</button>
+        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." class="input" />
+        <button type="submit" class="search-button">Search</button>
     </form>
 
-    <script src="./index.js"></script>
+    <!-- галерея изображений -->
+    <div class="gallery">
+        <!-- Карточки изображений -->
+    </div>
+
+    <!-- всплывающее окно -->
+    <div class="lightbox">
+        <div class="lightbox__overlay"></div>
+
+        <div class="lightbox__content">
+            <img class="lightbox__image" src="" alt="" >
+        </div>
+    </div>
+
+    <script src="../src/index.js"></script>
 </body>
 </html>
